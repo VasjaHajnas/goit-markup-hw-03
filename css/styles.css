@@ -404,6 +404,7 @@ a {
 
 .services-link {
   margin-bottom: 48px;
+  column-gap: 24px;
 }
 .services-title {
   font-weight: 500;
