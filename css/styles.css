@@ -64,9 +64,9 @@ a {
 }
 .container {
   width: 1158px;
+  padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  padding: 24px 0;
 }
 
 .section {
@@ -124,6 +124,7 @@ a {
   color: var(--accent-color);
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-nav-list:not(:last-child) {
