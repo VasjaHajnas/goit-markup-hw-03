@@ -81,7 +81,6 @@ a {
 .header {
   height: 0.05;
   background: #ffffff;
-
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -96,7 +95,6 @@ a {
   display: flex;
   margin-right: 76px;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-logo-web {
@@ -117,6 +115,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  padding: 24px 0;
 }
 
 .header-nav-list {
@@ -253,8 +252,8 @@ a {
   justify-content: space-between;
 }
 
-.function-list-item {
-  gap: 24px;
+.function-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /**
@@ -268,9 +267,13 @@ a {
 .team-item {
   background-color: #ffffff;
   padding-bottom: 32px;
-  gap: 24px;
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .team-item-list {
   padding: 32px 16px;
   text-align: center;
@@ -302,6 +305,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   padding-top: 32px;
+  margin-bottom: 8px;
 }
 .team-list-item {
   font-weight: 400;
@@ -361,17 +365,27 @@ a {
   | Navigation
   |============================
 */
+
+.section-title {
+  padding: 96px 0 120px;
+}
+.nav-list-item {
+  margin-bottom: 72px;
+}
+
 .nav-list {
   display: flex;
   padding-top: 96px;
   padding-bottom: 72px;
   justify-content: center;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .nav-btn {
   background-color: var(--main-portfolio-background-color);
   height: 48px;
   padding: 12px 24px;
+  border: 1px solid #e7e9fc;
 }
 
 .nav-btn-text {
@@ -385,6 +399,7 @@ a {
 
 .nav-btn:hover,
 .nav-btn:focus {
+  border: 1px solid transparent;
   color: #ffffff;
   background: #404bbf;
 }
@@ -432,4 +447,11 @@ a {
   border-right: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.services-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
