@@ -89,7 +89,6 @@ a {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  padding: 24px 0;
 }
 
 .header-logo {
@@ -125,6 +124,7 @@ a {
   color: var(--accent-color);
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-nav-list:not(:last-child) {
