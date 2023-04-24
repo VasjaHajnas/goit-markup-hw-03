@@ -166,7 +166,7 @@ a {
   margin-left: auto;
 }
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   font-weight: 700;
   margin: auto;
   margin-bottom: 48px;
@@ -349,9 +349,13 @@ a {
   display: flex;
   padding-top: 96px;
   padding-bottom: 72px;
+  justify-content: center;
+  gap: 24px;
 }
 .nav-btn {
   background-color: var(--main-portfolio-background-color);
+  height: 48px;
+  padding: 12px 24px;
 }
 
 .nav-btn-text {
@@ -376,6 +380,14 @@ a {
 */
 .services {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  padding-top: 8px;
+}
+
+.services-link {
+  margin-bottom: 48px;
 }
 .services-title {
   font-weight: 500;
@@ -383,6 +395,11 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  width: 360px;
+  padding-top: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }
 
 .services-item {
@@ -391,4 +408,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 32px;
+  margin: 0;
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
 }
