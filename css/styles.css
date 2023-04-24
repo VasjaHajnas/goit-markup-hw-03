@@ -124,13 +124,15 @@ a {
   color: var(--accent-color);
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-nav-list:not(:last-child) {
   margin-right: 40px;
 }
 
+.modal-link: {
+  padding: 24px 0;
+}
 .modal-link:hover,
 .modal-link:focus {
   color: #404bbf;
