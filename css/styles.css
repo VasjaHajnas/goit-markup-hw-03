@@ -82,7 +82,6 @@ a {
   height: 0.05;
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 0;
 }
 
 .header-container {
@@ -90,6 +89,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: space-around;
+  padding: 24px 0;
 }
 
 .header-logo {
