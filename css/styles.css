@@ -23,7 +23,8 @@ h1,
 h2,
 h3,
 h4,
-h5 p {
+h5,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -117,7 +118,7 @@ a {
 }
 
 .header-nav-list {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -161,8 +162,8 @@ a {
 */
 .hero {
   background: var(--accent-color);
-  width: 1440px;
-  height: 600px;
+  /* max-width: 1440px;
+  height: 600px; */
   margin-right: auto;
   margin-left: auto;
   padding: 188px 0;
@@ -207,12 +208,19 @@ a {
   | Benefits styles
   |============================
 */
-.benefist {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefist-list {
@@ -237,6 +245,10 @@ a {
   | Function styles
   |============================
 */
+
+.function {
+  padding-top: 0;
+}
 .function-item {
   font-weight: 700;
   font-size: 36px;
@@ -266,7 +278,6 @@ a {
 }
 .team-item {
   background-color: #ffffff;
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -275,16 +286,10 @@ a {
 }
 
 .team-item-list {
-  padding: 32px 16px;
   text-align: center;
-  margin-bottom: 8px;
 }
 .team-flex {
   display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 120px;
-  justify-content: space-between;
-  text-align: center;
 }
 
 .team-header {
@@ -315,7 +320,6 @@ a {
   background-color: #ffffff;
   color: #434455;
   margin: 0;
-  padding-top: 8px;
 }
 /**
   |============================
@@ -324,9 +328,6 @@ a {
 */
 .footer {
   background: var(--accent-color);
-  width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 100px 0;
 }
 
@@ -357,7 +358,6 @@ a {
   line-height: 1.5;
   color: var(--main-portfolio-color);
   width: 264px;
-  padding-bottom: 100px;
 }
 
 /**
@@ -369,18 +369,15 @@ a {
 .section-title {
   padding: 96px 0 120px;
 }
-.nav-list-item {
-  margin-bottom: 72px;
-}
+/* .nav-list-item {
+  
+} */
 
 .nav-list {
   display: flex;
-  padding-top: 96px;
-  padding-bottom: 72px;
   justify-content: center;
   column-gap: 24px;
   gap: 24px;
-  margin-bottom: 72px;
 }
 .nav-btn {
   background-color: var(--main-portfolio-background-color);
@@ -413,15 +410,11 @@ a {
 .services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 32px;
-  padding-top: 8px;
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .services-link {
-  margin-bottom: 48px;
   column-gap: 24px;
   width: calc((100% - 48px) / 3);
 }
@@ -432,9 +425,6 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   width: 360px;
-  padding-top: 32px;
-  padding-left: 16px;
-
   margin-bottom: 8px;
 }
 
@@ -444,8 +434,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-left: 16px;
-  padding-top: 8px;
   margin: 0;
 }
 
