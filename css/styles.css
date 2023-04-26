@@ -89,12 +89,12 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .header-logo-link {
   margin-right: 76px;
@@ -224,6 +224,11 @@ a {
 }
 .benefist {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .benefist-list {
@@ -264,8 +269,6 @@ a {
 }
 .function-list {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 120px;
 }
 
 .function-list-item:not(:last-child) {
