@@ -269,6 +269,7 @@ a {
 }
 .function-list {
   display: flex;
+  padding-bottom: 120px;
 }
 
 .function-list-item:not(:last-child) {
