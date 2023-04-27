@@ -51,14 +51,14 @@ button {
   padding: 0;
   margin: 0;
 }
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
 }
 
 a {
